@@ -18,7 +18,8 @@
   },
   "main": ".prettierrc.json",
   "scripts": {
-    "format": "npx sort-package-json && prettier --write \"**/*.{js,md,json}\""
+    "format": "npx sort-package-json && prettier --write \"**/*.{js,md,json}\"",
+    "prepare": "npx husky install"
   },
   "dependencies": {
     "prettier": "^2.2.1"
