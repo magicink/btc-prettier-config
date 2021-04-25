@@ -18,9 +18,7 @@
   },
   "main": ".prettierrc.json",
   "scripts": {
-    "format": "npx sort-package-json && prettier --write \"**/*.{js,md,json}\"",
-    "preinstall": "npx rimraf .husky/pre-commit",
-    "postinstall": "npx husky install && npx husky add .husky/pre-commit \"npm run format\""
+    "format": "npx sort-package-json && prettier --write \"**/*.{js,md,json}\""
   },
   "dependencies": {
     "prettier": "^2.2.1"
