@@ -17,6 +17,10 @@
     "email": "magicink@gmail.com"
   },
   "main": ".prettierrc.json",
+  "files": [
+    ".prettierrc.json",
+    ".prettierignore"
+  ],
   "scripts": {
     "format": "npx sort-package-json && prettier --write \"**/*.{js,md,json}\""
   },
