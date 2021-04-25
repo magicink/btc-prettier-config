@@ -17,14 +17,11 @@
     "email": "magicink@gmail.com"
   },
   "main": ".prettierrc.json",
+  "scripts": {
+    "format": "npx sort-package-json && prettier --write \"**/*.{js,md,json}\""
+  },
   "dependencies": {
     "prettier": "^2.2.1"
-  },
-  "scripts": {
-    "format": "prettier --write \"**/*.{js,md,json}\"",
-    "husky:add:pre-commit": "npx husky add .husky/pre-commit \"npm run format\"",
-    "preinstall": "npx rimraf .husky/pre-commit",
-    "postinstall": "husky install && npm run husky:add:pre-commit"
   },
   "devDependencies": {
     "husky": "^6.0.0"
