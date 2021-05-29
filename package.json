@@ -1,15 +1,15 @@
 {
-  "name": "prettier-config",
+  "name": "btc-prettier-config",
   "version": "1.0.0",
   "description": "A shared configuration for prettier",
   "keywords": [],
-  "homepage": "https://github.com/magicink/prettier-config#readme",
+  "homepage": "https://github.com/magicink/btc-prettier-config#readme",
   "bugs": {
-    "url": "https://github.com/magicink/prettier-config/issues"
+    "url": "https://github.com/magicink/btc-prettier-config/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/magicink/prettier-config.git"
+    "url": "git+https://github.com/magicink/btc-prettier-config.git"
   },
   "license": "ISC",
   "author": {
@@ -18,16 +18,12 @@
   },
   "main": ".prettierrc.json",
   "files": [
-    ".prettierrc.json",
-    ".prettierignore"
+    ".prettierrc.json"
   ],
   "scripts": {
     "format": "npx sort-package-json && prettier --write \"**/*.{js,md,json}\""
   },
   "dependencies": {
     "prettier": "^2.2.1"
-  },
-  "devDependencies": {
-    "husky": "^6.0.0"
   }
 }
